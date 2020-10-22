@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InfoPersonal</title>
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pill-nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.pill-nav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body style = "background-color:#77B486">
+
+  <div class="pill-nav">
+  <a href="/">Inicio</a>
+  <a class="active" href="/InfoPersonal">Informacion Personal</a>
+  <a href="/InfoLaboral">InfoLaboral</a>
+  <a href="/about">About</a>
+</div>
+  
+  <h1 style = "color: #FFFFFF"> Informacion Personal </h1>
+
+
+
+  <ul style = "color: #FFFFFF" style = "list-style-type:circle">
+    <li>
+  <p style = "color: #FFFFFF"><b> Nombre: </b> {{name}}</p>
+    </li>
+    <li>
+  <p style = "color: #FFFFFF"><b> Pais:</b> {{place}}</p>
+    </li>
+    <li>
+  <p style = "color: #FFFFFF"><b> Idioma:</b></p>
+    </li>
+
+    <ol>
+      {% for idiomas in language %}
+        <li> {{idiomas}}</li>
+      {% endfor %}
+    </ol>
+
+    <li>
+  <p style = "color: #FFFFFF"><b> Edad:</b> {{age}}</p>
+    </li>
+    <li>
+  <p style = "color: #FFFFFF"><b> Intereses:</b></p>
+    </li>
+
+        <ol>
+        {% for intereses in interest %}
+          <li> {{intereses}}</li>
+        {% endfor %}
+        </ol>
+
+  </ul>
+<img src="{{pic}}" alt="Foto {{cv}}" width="200" height="250" >
+</body>
+</html>

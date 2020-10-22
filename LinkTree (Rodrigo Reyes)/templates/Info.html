@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+<html>
+<head>
+<title> HomepageCV</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pill-nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.pill-nav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+div {
+  background-color: #DCD891;
+  width: 550px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: auto;
+}
+
+h1 {text-align: center;}
+h2 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+
+<body style = "background-color:#FF6464">
+<div>
+  <h1 style = "color: #FFFFFF">
+    Curriculum Vitae de {{cv}}
+  </h1>
+
+
+
+  <h2 textstyle = "color: #FFFFFF">
+    Informacion Personal
+  </h2>
+</div>
+<br>
+<br>
+<div2 class="pill-nav">
+  <a class="active" href="/">Inicio</a>
+  <a href="/InfoPersonal">Informacion Personal</a>
+  <a href="/InfoLaboral">InfoLaboral</a>
+  <a href="/about">About</a>
+</div2>
+<br>
+<br>
+<img src="{{pic}}" alt="Foto {{cv}}" width="200" height="250" >
+</body>
+</html>

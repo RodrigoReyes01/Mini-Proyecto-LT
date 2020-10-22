@@ -1,0 +1,38 @@
+--- # MiniProyecto CV
+fotografia: avatar.png
+informacion_pagina:
+    autor: Rodrigo Reyes
+    titulo: Mi CV
+informacion_personal:
+    nombre_completo: Rodrigo Daniel Reyes Mena
+    pais_de_nacimiento: Guatemala
+    idiomas:
+        - Español
+        - Ingles
+    edad: 19
+    acerca_de_mi: La tecnologia me llama mucho la atencion, me gusta inovar y ponerme a prueba, lograr hacer proyectos mejor de lo pedido. Me gusta trabajar en equipo ya que se avanza de manera rapida y con una siempre opinion siempre se puede mejorar. Me gusta ver tecnologia nunca antes vista y epeero algun dia yo inovar algo que ayude a la humanidad.
+    experiencia: segundo semestre Computer Science
+    intereses:
+        - Video Juegos
+        - Artes culinarias
+        - Programar
+        - Tecnologia inovativa
+        - Robotica
+informacion_profesional:
+    tecnologias: 
+        - Python
+        - C/C#
+        - Java
+    educacion: Universidad Francisco Marroquin
+informacion_referencias:
+    referencias_laborales: 
+        - Referencia N/A
+
+    referencia_personal: 
+        - Referencia N/A
+Picture: About.png
+
+Links: 
+  - Facebook: https://facebook.com
+  - Twitter: https://twitter.com
+  - Instagram: https://www.instagram.com/?hl=en

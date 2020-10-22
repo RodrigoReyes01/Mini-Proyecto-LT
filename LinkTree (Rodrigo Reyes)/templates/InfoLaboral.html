@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Info Laboral</title>
+  <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pill-nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+.pill-nav a:hover {
+  background-color: dodgerblue;
+  color: black;
+}
+
+.pill-nav a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body style = "background-color:#356B98">
+  
+  <div class="pill-nav">
+  <a href="/">Inicio</a>
+  <a href="/InfoPersonal">Informacion Personal</a>
+  <a class="active" href="/InfoLaboral">InfoLaboral</a>
+  <a href="/about">About</a>
+</div>
+  
+    <h1 style = "color: #FFFFFF"> Informacion Laboral </h1>
+
+  <ul style = "color: #FFFFFF" style = "list-style-type:circle">
+  <li>
+  <p style = "color: #FFFFFF"><b> Experiencia:</b> {{experiencia}}</p>
+  </li>
+  <li>
+    <p style = "color: #FFFFFF"><b> Educacion:</b> {{edu}}</p>
+  </li>
+  <li>
+    <p style = "color: #FFFFFF"><b> Tecnologias:</b></p>
+        <ol>
+        {% for x in tech %}
+          <li> {{x}}</li>
+        {% endfor %}
+        </ol>
+  </li>
+  <li>
+      <p style = "color: #FFFFFF"><b> Referencias laborales:</b></p>
+        <ol>
+        {% for x in Ref %}
+          <li> {{x}}</li>
+        {% endfor %}
+        </ol>
+   </li>
+   <li>
+      <p style = "color: #FFFFFF"><b> Referencias laborales:</b></p>
+        <ol>
+        {% for x in RefP %}
+          <li> {{x}}</li>
+        {% endfor %}
+        </ol>
+    </li>
+  </ul>
+  <img src="{{pic}}" alt="Foto {{cv}}" width="200" height="250" >
+</body>
+</html>
